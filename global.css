@@ -1,0 +1,93 @@
+body {
+  font: 100%/1.5 system-ui, sans-serif;
+  display: flex;
+  flex-flow: column;
+  max-width: 80em;
+  min-height: 100vh;
+  box-sizing: border-box;
+  margin: auto;
+  padding: 1em;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* right-side slider block */
+#time-filter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* slider width */
+#time-slider {
+  width: 600px;
+}
+
+/* orange highlight behind thumb */
+#time-slider::-webkit-slider-runnable-track {
+  background: linear-gradient(to right, #FFA500 var(--percent), #ccc 0%);
+  height: 6px;
+  border-radius: 3px;
+}
+
+#time-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: white;
+  border: 2px solid #FFA500;
+  margin-top: -6px; 
+  cursor: pointer;
+}
+
+/* time under right end */
+#time-display {
+  text-align: right;
+  width: 600px;
+  margin-top: 4px;
+}
+
+/* --- Legend container --- */
+.legend {
+  display: flex;
+  justify-content: center;   /* center it */
+  align-items: center;
+  gap: 2rem;
+  margin-block: 1rem;
+}
+
+/* item: circle + label */
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+/* circles */
+.legend .swatch {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* arrivals = orange */
+.legend .arrivals {
+  background: #FFA500;
+}
+
+/* departures = royal blue */
+.legend .departures {
+  background: #4169E1;
+}
+
+/* balanced = midpoint of your real map blend */
+.legend .balanced {
+  background: color-mix(in oklch, #4169E1 50%, #FFA500);
+}
