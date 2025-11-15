@@ -2,7 +2,7 @@
 
 An interactive web visualization of Boston’s BlueBike system, showing real-time patterns of bike station traffic across the city. The map updates dynamically as you filter by time, revealing how arrivals and departures shift throughout the day.
 
-**Live demo:** https://yourusername.github.io/boston_bike_traffic
+**Live demo:** [View Project](https://zmosds.github.io/boston_bike_traffic/)
 
 ---
 
